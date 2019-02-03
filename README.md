@@ -17,7 +17,7 @@ The project depends on some libraries, which are added as submodules. Make sure 
 
 ## Build steps
 
-I've test it with both Windows 10 and Ubuntu 16.04. The cmake file should work for other systems as well. In case it doesn't, just send me a message to wilsanph@gmail.com .
+I've test it with both Windows 10 and Ubuntu 16.04. 
 
 Also, make sure you are using an out of place build, by making a build directory and compiling the code there.
 
@@ -31,7 +31,7 @@ Also, make sure you are using an out of place build, by making a build directory
 
 ### Linux
 
-Testedi n Ubuntu 16.04, using g++ and makefiles. I've been having trouble making bullet a submodule and compiling it alongside the project, so the best way is to install bullet separately. The default configuration tries to search if Bullet was installed. If not, it falls back to the submodule. Unfortunately, I still can't find the issue with the build when using as a submodule, but will in a future release.
+Testedi n Ubuntu 16.04, using g++ and makefiles. 
 
 To build, just run ** cmake .. ** from the build directory.
 
