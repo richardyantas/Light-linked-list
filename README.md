@@ -7,7 +7,9 @@ Final project of the computer graphics course @ ucsp
 
 ![Img_current_state](./_img/deferred_lighting.png)
 
-**The report I made for the last presentation is [here](https://ts/cg/)**
+**The report is [here](https://ts/cg/)**
+
+![Img_current_state](./_img/Light_linked_list.png)
 
 ## Cloning the project
 
@@ -31,7 +33,7 @@ Also, make sure you are using an out of place build, by making a build directory
 
 ### Linux
 
-Testedi n Ubuntu 16.04, using g++ and makefiles. 
+Tested in Ubuntu 16.04, using g++ and makefiles. 
 
 To build, just run ** cmake .. ** from the build directory.
 
