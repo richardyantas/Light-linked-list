@@ -11,6 +11,25 @@ Final project of the computer graphics course @ ucsp
 
 ![Img_current_state](./_img/Light_linked_list.png)
 
+## Requirements
+
+This project need some modules before works.
+
+Install GLAD( Is necessary have glac.c in the main dir):
+
+	git clone https://github.com/Dav1dde/glad.git
+	cd glad
+	cmake ./
+	make 
+	sudo cp -a include /usr/local
+
+Install GLFW(from linux repositories):
+
+	sudo apt-get install libglfw3-dev libglfw3
+
+
+
+
 ## Cloning the project
 
 The project depends on some libraries, which are added as submodules. Make sure you clone the project with the --recursive option, in order to get the dependencies from other repositories.
