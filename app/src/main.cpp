@@ -3,19 +3,29 @@
 // g++ -std=c++0x main.cpp  glad.c -o earth -lglfw -ldl -lGL -lglut -lGLU -lGLEW -lrt -lm
 
 // g++ -std=c++0x main.cpp -o main  -lglfw -ldl -lGL -lglut -lGLU -lGLEW -lrt -lm
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include "utils.h"
 
-#include <iostream>
-#include <cmath>
+
+#include "../LCommon.h"
+#include "../LConfig.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-// settings
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+static char* readShaderSource(const char* shaderFile)
+{
+    FILE* fp = fopen(shaderFile, "r");
+    if ( fp == NULL ) { return NULL; }
+    fseek(fp, 0L, SEEK_END);
+    long size = ftell(fp);
+    fseek(fp, 0L, SEEK_SET);
+    char* buf = new char[size + 1];
+    fread(buf, 1, size, fp);
+    buf[size] = '\0';
+    fclose(fp);
+
+    return buf;
+}
+
 
 const char *vertexShaderSource ="#version 330 core\n"
     "layout (location = 0) in vec3 aPos;\n"
@@ -32,8 +42,17 @@ const char *fragmentShaderSource = "#version 330 core\n"
     "   FragColor = ourColor;\n"
     "}\n\0";
 
+//static char *vertexShaderSource = readShaderSource("../../res/shaders/LVertex.glsl");
+//static char *fragmentShaderSource = readShaderSource("../../res/shaders/LFragment.glsl");
+
+
+
 int main()
 {
+
+    //cout << *vertexShaderSource << endl;
+    LUtils::A r;
+    r.print();
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
