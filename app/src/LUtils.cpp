@@ -1,6 +1,6 @@
 
-
 #include "../LCommon.h"
+
 using namespace LUtils;
 
 void A::print()
