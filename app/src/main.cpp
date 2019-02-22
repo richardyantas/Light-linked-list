@@ -1,13 +1,10 @@
-#include "../LCommon.h"
-#include "../LConfig.h"
+/* #include "../include/LCommon.h"
+#include "../include/LConfig.h"
+#include "../include/LUtils.h"
 #include "../include/LShader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
-
-// settings
-/*const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;*/
 
 int main()
 {
@@ -126,4 +123,4 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // make sure the viewport matches the new window dimensions; note that width and 
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
-}
+} */

@@ -1,5 +1,6 @@
 //#pragma once
-#include "../LCommon.h"
+
+#include "LCommon.h"
 
 /* namespace LShader
 {

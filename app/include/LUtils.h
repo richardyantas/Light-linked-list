@@ -1,5 +1,4 @@
 #pragma once
-#include "../LCommon.h"
 
 namespace LUtils
 {

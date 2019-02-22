@@ -1,11 +1,8 @@
 // Common libraries and variables
-
+#pragma once
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
-#include "include/LUtils.h"
-//#include "include/LShader.h"
 
 #include <iostream>
 #include <cmath>

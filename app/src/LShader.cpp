@@ -1,4 +1,4 @@
-#include "../LCommon.h"
+//#include "../LCommon.h"
 
 //using namespace LShader;
 
