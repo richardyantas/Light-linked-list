@@ -73,13 +73,21 @@ void main()
     // == =====================================================
     // phase 1: directional lighting
     vec3 result = CalcDirLight(dirLight, norm, viewDir);
+    FragColor = vec4(result, 1.0); 
     // phase 2: point lights
     for(int i = 0; i < NR_POINT_LIGHTS; i++)
-        result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);    
+        result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);       
     // phase 3: spot light
     result += CalcSpotLight(spotLight, norm, FragPos, viewDir);    
     
-    FragColor = vec4(result, 1.0);
+    vec4 FragColorito = vec4(result, 1.0);
+    //FragColor = vec4(1.0,0.0,0.0,0.2);
+
+    //Great!!    
+    vec4 colorito = vec4(1.0, 1.0, 1.0, 0.3);
+    //colorTex = texture(texture_diffuse1, TexCoords);
+    vec4 color = mix(colorito, FragColorito, 0.3);
+    FragColor = color;
 }
 
 // calculates the color when using a directional light.

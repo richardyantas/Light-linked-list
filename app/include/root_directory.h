@@ -1,1 +1,1 @@
-const char * logl_root = "/home/sol/Documents/MCS/II/Graficas/Light-linked-list";
+const char *logl_root = "/home/sol/Documents/MCS/II/Graficas/Light-linked-list";
